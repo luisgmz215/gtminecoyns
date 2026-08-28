@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAKE LOL 😂</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: Arial, sans-serif;
+
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+
+      background-size: 400% 400%;
+      animation: rainbow 6s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .title {
+      position: relative;
+      z-index: 2;
+
+      font-size: clamp(60px, 13vw, 180px);
+      font-weight: 900;
+      color: white;
+
+      text-align: center;
+
+      text-shadow:
+        5px 5px 0 black,
+        -3px -3px 0 black,
+        3px -3px 0 black,
+        -3px 3px 0 black;
+
+      transform: rotate(-3deg);
+      user-select: none;
+    }
+
+    .face {
+      position: absolute;
+      font-size: 35px;
+      z-index: 1;
+
+      animation: float 2s ease-in-out infinite alternate;
+      user-select: none;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(-8px) rotate(-10deg);
+      }
+
+      to {
+        transform: translateY(8px) rotate(10deg);
+      }
+    }
+
+    .f1 { top: 8%; left: 10%; }
+    .f2 { top: 18%; right: 15%; }
+    .f3 { bottom: 15%; left: 18%; }
+    .f4 { bottom: 8%; right: 10%; }
+    .f5 { top: 45%; left: 5%; }
+    .f6 { top: 65%; right: 5%; }
+    .f7 { top: 10%; left: 48%; }
+    .f8 { bottom: 12%; left: 48%; }
+  </style>
+</head>
+
+<body>
+
+  <div class="face f1">😂</div>
+  <div class="face f2">🤣</div>
+  <div class="face f3">😂</div>
+  <div class="face f4">🤣</div>
+  <div class="face f5">😂</div>
+  <div class="face f6">🤣</div>
+  <div class="face f7">😂</div>
+  <div class="face f8">🤣</div>
+
+  <div class="title">
+    FAKE LOL 😂
+  </div>
+
+</body>
+</html>
